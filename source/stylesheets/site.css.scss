@@ -19,12 +19,60 @@ a {
   }
 }
 
-.main-hero {
-  background: salmon;
+header {
+  position: fixed;
+  background: transparent;
   text-align: center;
+  width: 100%;
+  height: $header-height;
+  top: 0;
+  z-index: 1;
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  &.sticky {
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.26);
+
+    a {
+      color: $brand-pink;
+    }
+  }
+}
+
+.main-hero {
+  padding-top: calc(#{$header-height} + #{$padding}); // make room for the header
+  padding-bottom: calc(8.1538vw + 5vw); // make room for the waves
+
+  background-image: url('/images/hero-bkg.jpg');
+  background-size: cover;
+
+  text-align: center;
+  position: relative;
+
+  color: #FFFFFF;
 
   .logo-hero {
     width: 70vw;
-    max-width: 900px;
+    max-width: 400px;
+  }
+
+  // waves
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 8.1538vw; // aspect ratio of the image
+    width: 100vw;
+
+    background-image: url('/images/waves.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
