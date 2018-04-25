@@ -44,8 +44,10 @@ header {
 }
 
 .main-hero {
-  padding-top: calc(#{$header-height} + #{$padding}); // make room for the header
-  padding-bottom: calc(8.1538vw + 5vw); // make room for the waves
+  padding-top: calc(#{$header-height} + #{$padding} + 3vw); // make room for the header
+  padding-bottom: calc(8.1538vw + 8vw + 3vw); // make room for the waves
+  padding-left: $padding;
+  padding-right: $padding;
 
   background-image: url('/images/hero-bkg.jpg');
   background-size: cover;
@@ -55,24 +57,33 @@ header {
 
   color: #FFFFFF;
 
+  @media #{$breakpoint-medium} {
+    padding-bottom: calc(8.1538vw + 5vw + 3vw);
+  }
+
   .logo-hero {
     width: 70vw;
     max-width: 400px;
+    padding-bottom:20px;
+  }
+
+  h2 {
+    font-weight: normal;
   }
 
   // waves
   &:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -3px; // make sure half pixel sizes don't show a bit of pink below the waves
     left: 0;
     right: 0;
 
     height: 8.1538vw; // aspect ratio of the image
-    width: 100vw;
+    width: 100%;
 
     background-image: url('/images/waves.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
   }
 }
