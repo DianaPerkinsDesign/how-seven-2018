@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300i,700');
 @import 'variables';
 
 html {
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  color: #333;
+  color: $body-text;
   font-family: 'Lato', sans-serif;
 }
 
@@ -18,6 +18,23 @@ a {
     color: rgba(#000, 0.6);
   }
 }
+
+hr {
+  border: none;
+  border-top: 1px solid $hr;
+  max-width: 960px;
+  margin: $half-padding auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: $padding;
+}
+
+// -----------------------------
+// Header
+// -----------------------------
 
 header {
   position: fixed;
@@ -93,6 +110,10 @@ header {
   }
 }
 
+// -----------------------------
+// Main Hero
+// -----------------------------
+
 .main-hero {
   padding-top: calc(#{$header-height} + #{$padding} + 3vw); // make room for the header
   padding-bottom: calc(8.1538vw + 8vw + 3vw); // make room for the waves
@@ -136,4 +157,17 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+}
+
+// -----------------------------
+// Text Block
+// -----------------------------
+
+.text-block {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 41px;
 }
