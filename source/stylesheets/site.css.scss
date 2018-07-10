@@ -10,6 +10,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+img {
+  max-width:100%;
+}
+
 a {
   color: rgba(#000, 0.7);
 
@@ -19,17 +23,29 @@ a {
   }
 }
 
+p {
+  line-height: 170%;
+}
+
 hr {
   border: none;
   border-top: 1px solid $hr;
   max-width: 960px;
-  margin: $half-padding auto;
+  margin: 0 auto;
+
+  @media #{$breakpoint-medium} {
+    margin: $half-padding auto;
+  }
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: $padding;
+}
+
+.nobr { 
+  white-space:nowrap; 
 }
 
 // -----------------------------
@@ -166,8 +182,123 @@ header {
 .text-block {
   font-style: italic;
   font-weight: 300;
-  font-size: 25px;
+  font-size: $font18;
   letter-spacing: 0.5px;
   text-align: center;
-  line-height: 41px;
+  line-height: 180%;
+
+  @media #{$breakpoint-medium} {
+    font-size: $font25;
+  }
+}
+
+// -----------------------------
+// Game Area
+// -----------------------------
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    padding-bottom: $padding;
+  }
+
+  @media #{$breakpoint-medium} {
+    align-items: center;
+    flex-direction: row;
+
+    > div {
+      width: 33%;
+      padding: 0 $half-padding 0;
+    }
+
+    > span {
+      width: 66%;
+      display: block;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  h2 {
+    color: $brand-pink;
+    text-transform: uppercase;
+    font-size: $font20;
+  }
+}
+
+// -----------------------------
+// Game Hero
+// -----------------------------
+
+.game-hero {
+  background: url('../images/kiki-background.jpg') center / cover no-repeat;
+  margin: $padding 0;
+}
+
+.game-hero .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  > span {
+    padding: $padding $padding 0 $padding;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  > div {
+    color: #ffffff;
+    text-align: center;
+    padding: 0 $padding $padding;
+
+    h2 {
+      text-transform: uppercase;
+      margin: $half-padding 0 0;
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+  }
+
+  @media #{$breakpoint-medium} {
+    flex-direction: row;
+
+    > span {
+      max-width: 600px;
+      padding: calc(#{$padding} * 2) 0;
+    }
+
+    > div {
+      flex: 1;
+
+      h2 {
+        font-size: $font30;
+        margin-top: $half-padding;
+      }
+    }
+  }
+}
+
+
+// -----------------------------
+// Form
+// -----------------------------
+
+
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+footer {
+  background: #f7f7f7;
+  text-align: center;
+  padding: $half-padding;
 }

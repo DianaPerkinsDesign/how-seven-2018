@@ -1,51 +1,53 @@
 ---
 title: How Seven!
 ---
-<header>
-	<nav>
-		<% link_to '/', :class => 'logo' do %>
-			<%= image_tag 'how-seven-pink.svg', :class => 'logo-header', :alt => 'How Seven!' %>
-		<% end %>
-		<ul>
-			<li><%= link_to 'About', '#about' %></li>
-			<li><%= link_to 'Games', '#games' %></li>
-			<li><%= link_to 'Contact', '#contact' %></li>
-		</ul>
-	</nav>
-</header>
+
 <section class="main-hero">
 	<h1><%= image_tag 'how-seven.svg', :class => 'logo-hero' %></h1>
 	<h2>Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
 </section>
 
 <section class="text-block container">
-	<p>How Seven is a husband-and-wife team focused on delivering quality apps with unprecedented polish. That moment when you realize "Oh man. They really put a lot of thought into everything about this."? Yeah, that's kind of what we're going for.</p>
+	<p>How Seven is a husband-and-wife team focused on delivering quality apps with unprecedented polish. That moment when you realize "Oh man. They really put a lot of thought into everything about this."? Yeah, that's kind of what <span class="nobr">we're going for.</span></p>
 </section>
 
 <hr>
 
-<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
+<section class="game-area container">
+	<div>
+		<h2>Kiki's Koi-Koi</h2>
+		<p>Koi-Koi is a simple two-player card game played with the colourful Japanese cards known as Hanafuda.</p>
+		<% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
+			<%= image_tag 'appstore.svg', :alt => 'App Store' %>
+		<% end %>
+	</div>
+	<span><%= image_tag 'kiki-banner@2x.jpg', :alt => 'Kiki\'s Koi-Koi' %></span>
+</section>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+<section class="game-hero">
+	<div class="container">
+		<span><%= image_tag 'kiki-phone.png', :alt => 'Kiki\'s Koi-Koi' %></span>
+		<div>
+			<h2>Kiki's Koi-Koi</h2>
+			<h3>Hanafuda on iOS</h3>		
+			<% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
+				<%= image_tag 'appstore.svg', :alt => 'App Store' %>
+			<% end %>
+		</div>
+	</div>
+</section>
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<form>
+	<label>What is this about?</label>
+	<select>
+		<option></option>
+	</select>
+	<label>Which App?</label>
+	<input type="text">
+	<label>Your Name</label>
+	<input type="text">
+	<label></label>
+	<input type="text">
+	<label></label>
+	<textarea></textarea>
+</form>
