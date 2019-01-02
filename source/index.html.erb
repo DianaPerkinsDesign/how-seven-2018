@@ -29,7 +29,7 @@ title: How Seven!
 		<span><%= image_tag 'kiki-phone.png', :alt => 'Kiki\'s Koi-Koi' %></span>
 		<div>
 			<h2>Kiki's Koi-Koi</h2>
-			<h3>Hanafuda on iOS</h3>		
+			<h3>Hanafuda on iOS</h3>
 			<% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
 				<%= image_tag 'appstore.svg', :alt => 'App Store' %>
 			<% end %>
@@ -37,17 +37,33 @@ title: How Seven!
 	</div>
 </section>
 
-<form>
-	<label>What is this about?</label>
-	<select>
-		<option></option>
+<form data-behavior="contact-form">
+  <input type="hidden" name="ticket[source]" value="how_seven_site" />
+
+	<label for="ticket_inquiry_type">What is this about?</label>
+	<select id="ticket_inquiry_type" name="ticket[inquiry_type]">
+    <option value="general">General Inquiry</option>
+    <option value="bug">Bug Report</option>
 	</select>
-	<label>Which App?</label>
-	<input type="text">
-	<label>Your Name</label>
-	<input type="text">
-	<label></label>
-	<input type="text">
-	<label></label>
-	<textarea></textarea>
+
+	<label for="ticket_app">Which app?</label>
+	<select id="ticket_app" name="ticket[app]">
+    <option value="">No app in particular</option>
+    <option value="kiki">Kiki's Koi-Koi</option>
+    <option value="bingo">The Bingo Spot</option>
+	</select>
+
+	<label for="ticket_name">Your Name</label>
+	<input id="ticket_name" name="ticket[name]" type="text" />
+
+	<label for="ticket_email">Your Email (so we can respond)</label>
+	<input id="ticket_email" name="ticket[email]" type="email" />
+
+	<label for="ticket_subject">Subject</label>
+	<input id="ticket_subject" name="ticket[subject]" type="text" />
+
+	<label for="ticket_message">Message</label>
+  <textarea id="ticket_message" name="ticket[message]"></textarea>
+
+  <input type="submit" value="Submit" />
 </form>
