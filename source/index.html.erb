@@ -3,66 +3,66 @@ title: How Seven!
 ---
 
 <section class="main-hero">
-	<h1><%= image_tag 'how-seven.svg', :class => 'logo-hero' %></h1>
-	<h2>Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
+  <h1><%= image_tag 'how-seven.svg', :class => 'logo-hero' %></h1>
+  <h2>Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
 </section>
 
 <section class="text-block container">
-	<p>How Seven is a husband-and-wife team focused on delivering quality apps with unprecedented polish. That moment when you realize "Oh man. They really put a lot of thought into everything about this."? Yeah, that's kind of what <span class="nobr">we're going for.</span></p>
+  <p>How Seven is a husband-and-wife team focused on delivering quality apps with unprecedented polish. That moment when you realize "Oh man. They really put a lot of thought into everything about this."? Yeah, that's kind of what <span class="nobr">we're going for.</span></p>
 </section>
 
 <hr>
 
 <section class="game-area container">
-	<div>
-		<h2>Kiki's Koi-Koi</h2>
-		<p>Koi-Koi is a simple two-player card game played with the colourful Japanese cards known as Hanafuda.</p>
-		<% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
-			<%= image_tag 'appstore.svg', :alt => 'App Store' %>
-		<% end %>
-	</div>
-	<span><%= image_tag 'kiki-banner@2x.jpg', :alt => 'Kiki\'s Koi-Koi' %></span>
+  <div>
+    <h2>Kiki's Koi-Koi</h2>
+    <p>Koi-Koi is a simple two-player card game played with the colourful Japanese cards known as Hanafuda.</p>
+    <% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
+      <%= image_tag 'appstore.svg', :alt => 'App Store' %>
+    <% end %>
+  </div>
+  <span><%= image_tag 'kiki-banner@2x.jpg', :alt => 'Kiki\'s Koi-Koi' %></span>
 </section>
 
 <section class="game-hero">
-	<div class="container">
-		<span><%= image_tag 'kiki-phone.png', :alt => 'Kiki\'s Koi-Koi' %></span>
-		<div>
-			<h2>Kiki's Koi-Koi</h2>
-			<h3>Hanafuda on iOS</h3>
-			<% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
-				<%= image_tag 'appstore.svg', :alt => 'App Store' %>
-			<% end %>
-		</div>
-	</div>
+  <div class="container">
+    <span><%= image_tag 'kiki-phone.png', :alt => 'Kiki\'s Koi-Koi' %></span>
+    <div>
+      <h2>Kiki's Koi-Koi</h2>
+      <h3>Hanafuda on iOS</h3>
+      <% link_to 'https://itunes.apple.com/us/app/kikis-koi-koi/id440630538', :class => 'app-store-link' do %>
+        <%= image_tag 'appstore.svg', :alt => 'App Store' %>
+      <% end %>
+    </div>
+  </div>
 </section>
 
 <form data-behavior="contact-form">
   <input type="hidden" name="ticket[source]" value="how_seven_site" />
 
-	<label for="ticket_inquiry_type">What is this about?</label>
-	<select id="ticket_inquiry_type" name="ticket[inquiry_type]">
+  <label for="ticket_inquiry_type">What is this about?</label>
+  <select id="ticket_inquiry_type" name="ticket[inquiry_type]">
     <option value="general">General Inquiry</option>
     <option value="bug">Bug Report</option>
-	</select>
+  </select>
 
-	<label for="ticket_app">Which app?</label>
-	<select id="ticket_app" name="ticket[app]">
+  <label for="ticket_app">Which app?</label>
+  <select id="ticket_app" name="ticket[app]">
     <option value="">No app in particular</option>
     <option value="kiki">Kiki's Koi-Koi</option>
     <option value="bingo">The Bingo Spot</option>
-	</select>
+  </select>
 
-	<label for="ticket_name">Your Name</label>
-	<input id="ticket_name" name="ticket[name]" type="text" />
+  <label for="ticket_name">Your Name</label>
+  <input id="ticket_name" name="ticket[name]" type="text" />
 
-	<label for="ticket_email">Your Email (so we can respond)</label>
-	<input id="ticket_email" name="ticket[email]" type="email" />
+  <label for="ticket_email">Your Email (so we can respond)</label>
+  <input id="ticket_email" name="ticket[email]" type="email" />
 
-	<label for="ticket_subject">Subject</label>
-	<input id="ticket_subject" name="ticket[subject]" type="text" />
+  <label for="ticket_subject">Subject</label>
+  <input id="ticket_subject" name="ticket[subject]" type="text" />
 
-	<label for="ticket_message">Message</label>
+  <label for="ticket_message">Message</label>
   <textarea id="ticket_message" name="ticket[message]"></textarea>
 
   <input type="submit" value="Submit" />
