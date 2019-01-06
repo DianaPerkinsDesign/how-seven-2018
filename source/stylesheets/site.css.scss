@@ -45,8 +45,8 @@ hr {
   padding: $padding;
 }
 
-.nobr { 
-  white-space:nowrap; 
+.nobr {
+  white-space:nowrap;
 }
 
 // -----------------------------
@@ -359,6 +359,10 @@ span.custom-dropdown {
     margin: 2vw auto;
   }
 
+}
+
+.form-success {
+  display: none;
 }
 
 // -----------------------------

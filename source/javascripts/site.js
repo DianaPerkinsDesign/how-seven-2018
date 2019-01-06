@@ -36,9 +36,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       };
 
       fetch("https://hello.howseven.com", options).then(r => r.json()).then(data => {
-        console.log(data);
+        this.reset()
+        this.style.display = "none"
+        document.getElementsByClassName("form-success")[0].style.display = "block"
       });
-      console.log("yeah")
     })
   })
 })
