@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300i,700');
 @import 'variables';
+@import 'custom-dropdown';
 
 html {
   font-size: 14px; // base font sizing
@@ -288,10 +289,77 @@ header {
 
 
 // -----------------------------
-// Form
+// Forms
 // -----------------------------
 
+input, textarea {
+  display: block;
+  width: 93%;
+}
 
+select {
+  width: 100%;
+}
+
+label {
+  display: block;
+  width: 98%;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: $half-padding;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input[type=text], input[type=email], textarea {
+  border: 1px solid $input-border;
+  border-radius: $border-radius;
+  padding: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid $brand-pink;
+  border-radius: $border-radius;
+  color: $brand-pink;
+  background-color: white;
+
+  &:active {
+    color: white;
+    background-color: $brand-pink;
+  }
+}
+
+// dropdowns are handled by custom-dropdown.scss
+span.custom-dropdown {
+  margin-top: 8px;
+}
+
+.explanation {
+  font-size: $font11;
+}
+
+.home-form {
+  h1 {
+    text-align: center;
+    a {
+      color: $brand-pink;
+    }
+  }
+
+  form {
+    max-width: 500px;
+    margin: 2vw auto;
+  }
+
+}
 
 // -----------------------------
 // Footer

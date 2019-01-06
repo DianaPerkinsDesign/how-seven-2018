@@ -37,33 +37,56 @@ title: How Seven!
   </div>
 </section>
 
-<form data-behavior="contact-form">
-  <input type="hidden" name="ticket[source]" value="how_seven_site" />
+<section class="container home-form">
+  <h1><a name="contact">Get in touch</a></h1>
+  <form data-behavior="contact-form">
+    <input type="hidden" name="ticket[source]" value="how_seven_site" />
 
-  <label for="ticket_inquiry_type">What is this about?</label>
-  <select id="ticket_inquiry_type" name="ticket[inquiry_type]">
-    <option value="general">General Inquiry</option>
-    <option value="bug">Bug Report</option>
-  </select>
+    <fieldset>
+      <label for="ticket_inquiry_type">
+        What is this about?
+        <span class="custom-dropdown custom-dropdown--white">
+          <select id="ticket_inquiry_type" name="ticket[inquiry_type]" class="custom-dropdown__select custom-dropdown__select--white">
+            <option value="general">General Inquiry</option>
+            <option value="bug">Bug Report</option>
+          </select>
+        </span>
+      </label>
+    </fieldset>
 
-  <label for="ticket_app">Which app?</label>
-  <select id="ticket_app" name="ticket[app]">
-    <option value="">No app in particular</option>
-    <option value="kiki">Kiki's Koi-Koi</option>
-    <option value="bingo">The Bingo Spot</option>
-  </select>
+    <fieldset>
+      <label for="ticket_app">
+        Which app?
+        <span class="custom-dropdown custom-dropdown--white">
+          <select id="ticket_app" name="ticket[app]" class="custom-dropdown__select custom-dropdown__select--white">
+            <option value="">No app in particular</option>
+            <option value="kiki">Kiki's Koi-Koi</option>
+            <option value="bingo">The Bingo Spot</option>
+          </select>
+        </span>
+      </label>
+    </fieldset>
 
-  <label for="ticket_name">Your Name</label>
-  <input id="ticket_name" name="ticket[name]" type="text" />
+    <fieldset>
+      <label for="ticket_name">Your Name</label>
+      <input id="ticket_name" name="ticket[name]" type="text" />
+    </fieldset>
 
-  <label for="ticket_email">Your Email (so we can respond)</label>
-  <input id="ticket_email" name="ticket[email]" type="email" />
+    <fieldset>
+      <label for="ticket_email">Your Email <span class="explanation">(so we can respond)</span></label>
+      <input id="ticket_email" name="ticket[email]" type="email" />
+    </fieldset>
 
-  <label for="ticket_subject">Subject</label>
-  <input id="ticket_subject" name="ticket[subject]" type="text" />
+    <fieldset>
+      <label for="ticket_subject">Subject</label>
+      <input id="ticket_subject" name="ticket[subject]" type="text" />
+    </fieldset>
 
-  <label for="ticket_message">Message</label>
-  <textarea id="ticket_message" name="ticket[message]"></textarea>
+    <fieldset>
+      <label for="ticket_message">Message</label>
+      <textarea id="ticket_message" name="ticket[message]"></textarea>
+    </fieldset>
 
-  <input type="submit" value="Submit" />
-</form>
+    <input type="submit" value="Submit" />
+  </form>
+</section>
