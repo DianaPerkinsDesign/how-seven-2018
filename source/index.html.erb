@@ -71,12 +71,12 @@ title: How Seven!
 
     <fieldset>
       <label for="ticket_name">Your Name</label>
-      <input id="ticket_name" name="ticket[name]" type="text" />
+      <input id="ticket_name" name="ticket[name]" type="text" required />
     </fieldset>
 
     <fieldset>
       <label for="ticket_email">Your Email <span class="explanation">(so we can respond)</span></label>
-      <input id="ticket_email" name="ticket[email]" type="email" />
+      <input id="ticket_email" name="ticket[email]" type="email" required />
     </fieldset>
 
     <fieldset>
@@ -86,7 +86,7 @@ title: How Seven!
 
     <fieldset>
       <label for="ticket_message">Message</label>
-      <textarea id="ticket_message" name="ticket[message]"></textarea>
+      <textarea id="ticket_message" name="ticket[message]" required></textarea>
     </fieldset>
 
     <input type="submit" value="Submit" />
