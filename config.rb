@@ -44,3 +44,7 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :google_analytics do |ga|
+  ga.tracking_id = "UA-132564075-1"
+end
