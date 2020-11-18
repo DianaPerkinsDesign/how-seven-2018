@@ -16,14 +16,24 @@ title: How Seven!
 
 <section class="game-area container">
   <a name="games"></a>
+
   <div>
     <h2>Kiki's Koi-Koi</h2>
-    <p>Koi-Koi is a simple two-player card game played with the colourful Japanese cards known as Hanafuda.</p>
+    <p>Koi-Koi is a simple two-player card game played with the colorful Japanese cards known as Hanafuda.</p>
     <% link_to data.site.kikiAppStoreUrl, target: :_blank, :class => 'app-store-link' do %>
       <%= image_tag 'appstore.svg', :alt => 'App Store' %>
     <% end %>
   </div>
   <span><%= image_tag 'kiki-banner@2x.jpg', :alt => 'Kiki\'s Koi-Koi' %></span>
+
+  <div>
+    <h2>The Bingo Spot</h2>
+    <p>Play all the Bingo you want without any of the hassle.</p>
+    <% link_to data.site.bingoAppStoreUrl, target: :_blank, :class => 'app-store-link' do %>
+      <%= image_tag 'appstore.svg', :alt => 'App Store' %>
+    <% end %>
+  </div>
+  <span><%= image_tag 'bingo-banner@2x.jpg', :alt => 'The Bingo Spot' %></span>
 </section>
 
 <section class="game-hero">
