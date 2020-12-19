@@ -16,7 +16,7 @@
     <%= javascript_include_tag "fontawesome-all.min" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body class="<%= current_page.data.slug %>">
     <header>
       <nav>
         <% link_to '/', :class => 'logo' do %>
