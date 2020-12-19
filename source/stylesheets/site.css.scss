@@ -90,10 +90,11 @@ header {
 
     &:hover {
       color: #FFFFFF;
+      text-decoration: underline;
     }
   }
 
-  // header when it's moving down the page
+  // header gets this class when it's moving down the page
   &.sticky {
     background: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.26);
@@ -119,11 +120,13 @@ header {
         padding-right: 0;
       }
     }
-
   }
+}
 
-  @media #{$breakpoint-medium} {
-
+// Content page headers
+body:not(.home) header {
+  li a {
+    color: $brand-pink;
   }
 }
 
