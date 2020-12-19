@@ -368,6 +368,27 @@ span.custom-dropdown {
   display: none;
 }
 
+.form-success {
+  text-align: center;
+
+  h1 {
+    font-size: 76px;
+    color: $brand-pink;
+    margin-bottom: .2em;
+  }
+
+  .message {
+    background: #f7f7f7;
+    padding: 2em;
+    max-width: 400px;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .fine-details {
   max-width: 450px;
   margin-left: .75em;
