@@ -90,10 +90,11 @@ header {
 
     &:hover {
       color: #FFFFFF;
+      text-decoration: underline;
     }
   }
 
-  // header when it's moving down the page
+  // header gets this class when it's moving down the page
   &.sticky {
     background: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.26);
@@ -119,11 +120,13 @@ header {
         padding-right: 0;
       }
     }
-
   }
+}
 
-  @media #{$breakpoint-medium} {
-
+// Content page headers
+body:not(.home) header {
+  li a {
+    color: $brand-pink;
   }
 }
 
@@ -363,6 +366,36 @@ span.custom-dropdown {
 
 .form-success {
   display: none;
+}
+
+.form-success {
+  text-align: center;
+
+  h1 {
+    font-size: 76px;
+    color: $brand-pink;
+    margin-bottom: .2em;
+  }
+
+  .message {
+    background: #f7f7f7;
+    padding: 2em;
+    max-width: 400px;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fine-details {
+  max-width: 450px;
+  margin-left: .75em;
+}
+
+.grecaptcha-badge { 
+  visibility: hidden; 
 }
 
 // -----------------------------

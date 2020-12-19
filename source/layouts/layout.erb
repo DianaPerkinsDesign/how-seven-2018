@@ -16,20 +16,20 @@
     <%= javascript_include_tag "fontawesome-all.min" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body class="<%= current_page.data.slug %>">
     <header>
       <nav>
         <% link_to '/', :class => 'logo' do %>
           <%= image_tag 'how-seven-pink.svg', :class => 'logo-header', :alt => 'How Seven!' %>
         <% end %>
         <ul>
-          <li><%= link_to 'About', '#about' %></li>
-          <li><%= link_to 'Games', '#games' %></li>
-          <li><%= link_to 'Contact', '#contact' %></li>
+          <li><%= link_to 'About', '/#about' %></li>
+          <li><%= link_to 'Games', '/#games' %></li>
+          <li><%= link_to 'Contact', '/#contact' %></li>
         </ul>
       </nav>
     </header>
     <%= yield %>
-    <footer>Copyright &copy; <%= Time.now.year %> How Seven, LLC. All rights reserved.</footer>
+    <footer>Copyright &copy; <%= Time.now.year %> How Seven, LLC. All rights reserved. <%= link_to 'Terms & Conditions & Privacy Policy', 'terms.html' %> | <%= link_to 'Press', 'https://press.howseven.com' %></footer>
   </body>
 </html>
