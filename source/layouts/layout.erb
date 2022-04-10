@@ -33,10 +33,11 @@
           <li><%= link_to 'About', '/#about' %></li>
           <li><%= link_to 'Games', '/#games' %></li>
           <li><%= link_to 'Contact', '/#contact' %></li>
+          <li><%= link_to 'Press', 'https://press.howseven.com', target: :_blank %></li>
         </ul>
       </nav>
     </header>
     <%= yield %>
-    <footer>Copyright &copy; 2011–<%= Time.now.year %> How Seven, LLC. All rights reserved. <%= link_to 'Terms & Conditions / Privacy Policy', '/terms' %> | <%= link_to 'Press', 'https://press.howseven.com' %></footer>
+    <footer>Copyright &copy; 2011–<%= Time.now.year %> How Seven, LLC. All rights reserved. <%= link_to 'Terms & Conditions / Privacy Policy', '/terms' %></footer>
   </body>
 </html>
