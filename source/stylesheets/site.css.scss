@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,300i,700');
-@import 'variables';
-@import 'custom-dropdown';
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300i,700");
+@import "variables";
+@import "custom-dropdown";
 
 html {
   font-size: 14px; // base font sizing
@@ -8,11 +8,11 @@ html {
 
 body {
   color: $body-text;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 a {
@@ -46,7 +46,7 @@ hr {
 }
 
 .nobr {
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 // -----------------------------
@@ -80,24 +80,24 @@ header {
   }
 
   a:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   li a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     padding: 5px 20px;
 
     &:hover {
-      color: #FFFFFF;
+      color: #ffffff;
       text-decoration: underline;
     }
   }
 
   // header gets this class when it's moving down the page
   &.sticky {
-    background: #FFFFFF;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.26);
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
 
     .logo {
       flex: 1;
@@ -105,7 +105,7 @@ header {
       text-align: left;
 
       img {
-        width: calc( #{$header-height} * 1.2);
+        width: calc(#{$header-height} * 1.2);
       }
     }
 
@@ -135,18 +135,20 @@ body:not(.home) header {
 // -----------------------------
 
 .main-hero {
-  padding-top: calc(#{$header-height} + #{$padding} + 3vw); // make room for the header
+  padding-top: calc(
+    #{$header-height} + #{$padding} + 3vw
+  ); // make room for the header
   padding-bottom: calc(8.1538vw + 8vw + 3vw); // make room for the waves
   padding-left: $padding;
   padding-right: $padding;
 
-  background-image: url('/images/hero-bkg.jpg');
+  background-image: url("/images/hero-bkg.jpg");
   background-size: cover;
 
   text-align: center;
   position: relative;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media #{$breakpoint-medium} {
     padding-bottom: calc(8.1538vw + 5vw + 3vw);
@@ -155,7 +157,7 @@ body:not(.home) header {
   .logo-hero {
     width: 70vw;
     max-width: 400px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
 
   h2 {
@@ -164,7 +166,7 @@ body:not(.home) header {
 
   // waves
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -3px; // make sure half pixel sizes don't show a bit of pink below the waves
     left: 0;
@@ -173,7 +175,7 @@ body:not(.home) header {
     height: 8.1538vw; // aspect ratio of the image
     width: 100%;
 
-    background-image: url('/images/waves.svg');
+    background-image: url("/images/waves.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -239,7 +241,7 @@ body:not(.home) header {
 // -----------------------------
 
 .game-hero {
-  background: url('../images/kiki-background.jpg') center / cover no-repeat;
+  background: url("../images/kiki-background.jpg") center / cover no-repeat;
   margin: $padding 0;
 }
 
@@ -290,12 +292,12 @@ body:not(.home) header {
   }
 }
 
-
 // -----------------------------
 // Forms
 // -----------------------------
 
-input, textarea {
+input,
+textarea {
   display: block;
   width: 93%;
 }
@@ -318,13 +320,15 @@ label {
   margin-bottom: 8px;
 }
 
-input[type=text], input[type=email], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   border: 1px solid $input-border;
   border-radius: $border-radius;
   padding: 10px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
@@ -361,7 +365,6 @@ span.custom-dropdown {
     max-width: 500px;
     margin: 2vw auto;
   }
-
 }
 
 .form-success {
@@ -374,7 +377,7 @@ span.custom-dropdown {
   h1 {
     font-size: 76px;
     color: $brand-pink;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
   }
 
   .message {
@@ -391,7 +394,7 @@ span.custom-dropdown {
 
 .fine-details {
   max-width: 450px;
-  margin-left: .75em;
+  margin-left: 0.75em;
 }
 
 .grecaptcha-badge {
@@ -413,8 +416,24 @@ footer {
 // -----------------------------
 
 .antihero {
-  padding-top: calc(#{$header-height}); // make room for the header
+  padding-top: calc(#{$header-height} + 2em); // make room for the header
   h1 {
     text-align: center;
+  }
+}
+
+.blanche-beta {
+  .game-hero {
+    margin: 0;
+  }
+
+  .content-smol {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  .home-form {
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 }
