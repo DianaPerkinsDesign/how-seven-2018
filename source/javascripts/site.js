@@ -1,12 +1,14 @@
 // sticky headers
 
 $(window).scroll(function() {
+  if (!$("body").data("stickyStatic")) {
     if ($(this).scrollTop() > 15){
         $('header').addClass("sticky");
     }
     else{
         $('header').removeClass("sticky");
     }
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function(event) {

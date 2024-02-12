@@ -407,3 +407,14 @@ footer {
   text-align: center;
   padding: $half-padding;
 }
+
+// -----------------------------
+// Christopher Shenanigans
+// -----------------------------
+
+.antihero {
+  padding-top: calc(#{$header-height}); // make room for the header
+  h1 {
+    text-align: center;
+  }
+}
