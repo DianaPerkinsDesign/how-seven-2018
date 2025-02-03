@@ -39,6 +39,19 @@ slug: home
   <span><%= image_tag 'bingo-banner@2x.jpg', :alt => 'The Bingo Spot' %></span>
 </section>
 
+<section class="game-area container">
+  <div>
+    <h2>Carte Blanche</h2>
+    <p>Five classic card games presented by <nobr>one classy raven.</nobr></p>
+    <% link_to "#", target: :_blank, :class => 'app-store-link' do %>
+      <%= image_tag 'catalog-dev-link-badge-buy.png', :alt => 'Playdate Catalog' %>
+      <%# Add Itch badge %>
+      <%# Link to website? %>
+    <% end %>
+  </div>
+  <span><%= image_tag 'blanche-banner@2x.png', :alt => 'Carte Blanche' %></span>
+</section>
+
 <section class="game-hero">
   <div class="container">
     <span><%= image_tag 'kiki-phone.png', :alt => 'Kiki\'s Koi-Koi' %></span>
