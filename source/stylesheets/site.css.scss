@@ -210,6 +210,16 @@ body:not(.home) header {
     padding-bottom: $padding;
   }
 
+  .game-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: $half-padding;
+
+    img {
+      max-width: 150px;
+    }
+  }
+
   @media #{$breakpoint-medium} {
     align-items: center;
     flex-direction: row;
@@ -225,6 +235,7 @@ body:not(.home) header {
 
       img {
         width: 100%;
+        border-radius: $border-radius;
       }
     }
   }

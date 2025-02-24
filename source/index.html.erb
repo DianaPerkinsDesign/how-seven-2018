@@ -21,7 +21,7 @@ slug: home
   <div>
     <h2>Kiki's Koi-Koi</h2>
     <p>Koi-Koi is a simple two-player card game played with the colorful Japanese cards known as Hanafuda.</p>
-    <% link_to data.site.kikiAppStoreUrl, target: :_blank, :class => 'app-store-link' do %>
+    <% link_to data.site.kikiAppStoreUrl, target: :_blank, rel: :noreferrer, :class => 'app-store-link' do %>
       <%= image_tag 'appstore.svg', :alt => 'App Store' %>
     <% end %>
   </div>
@@ -32,7 +32,7 @@ slug: home
   <div>
     <h2>The Bingo Spot</h2>
     <p>Play all the Bingo you want without any of the hassle.</p>
-    <% link_to data.site.bingoAppStoreUrl, target: :_blank, :class => 'app-store-link' do %>
+    <% link_to data.site.bingoAppStoreUrl, target: :_blank, rel: :noreferrer, :class => 'app-store-link' do %>
       <%= image_tag 'appstore.svg', :alt => 'App Store' %>
     <% end %>
   </div>
@@ -43,11 +43,17 @@ slug: home
   <div>
     <h2>Carte Blanche</h2>
     <p>Five classic card games presented by <nobr>one classy raven.</nobr></p>
-    <% link_to "#", target: :_blank, :class => 'app-store-link' do %>
+    <div class="game-links">
+    <% link_to "https://play.date/games/carte-blanche/", target: :_blank, rel: :noreferrer, :class => 'app-store-link' do %>
       <%= image_tag 'catalog-dev-link-badge-buy.png', :alt => 'Playdate Catalog' %>
-      <%# Add Itch badge %>
-      <%# Link to website? %>
     <% end %>
+    <% link_to "https://howseven.itch.io/carte-blanche", target: :_blank, rel: :noreferrer, :class =>'itch-link' do %>
+      Buy on Itch ↗︎
+    <% end %>
+    <% link_to "https://carteblanche.cards", target: :_blank, rel: :noreferrer, :class =>'site-link' do %>
+      Official Site ↗︎
+    <% end %>
+    </div>
   </div>
   <span><%= image_tag 'blanche-banner@2x.png', :alt => 'Carte Blanche' %></span>
 </section>
