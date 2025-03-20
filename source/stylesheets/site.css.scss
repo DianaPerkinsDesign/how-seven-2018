@@ -373,13 +373,14 @@ span.custom-dropdown {
   }
 
   form {
+    display: none;
     max-width: 500px;
     margin: 2vw auto;
   }
 }
 
 .form-success {
-  display: none;
+  // display: none;
 }
 
 .form-success {
