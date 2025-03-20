@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelectorAll("[data-behavior='contact-form']").forEach(function(form) {
     form.addEventListener("submit", function(event) {
       const contactForm = this
+      document.getElementById("contact-submit-button").disabled = true;
       event.preventDefault();
       grecaptcha.ready(function() {
         grecaptcha
