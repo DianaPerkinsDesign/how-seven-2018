@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const contactForm = this
       document.getElementById("contact-submit-button").disabled = true;
       event.preventDefault();
-      grecaptcha.ready(function() {
+      grecaptcha.enterprise.ready(function() {
         grecaptcha
-          .execute('6Lf-EIgUAAAAACtqE96q1QSsHT0B72S4NLAQi7_g', {action: 'contactForm'})
+          .enterprise
+          .execute('6LeCsOMqAAAAAForEf4XFKa_QiOl6agSp7S3kFgL', {action: 'contactForm'})
           .then(function(token, i) {
             let formData = new FormData(contactForm);
             let parsedData = {
